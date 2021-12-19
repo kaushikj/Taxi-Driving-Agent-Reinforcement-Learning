@@ -3,7 +3,7 @@
 ### Original Problem from Open AI gym Taxi-v3
 The source for the original problem is obtained from Open AI gym. which simulates a simplified taxi environment, the goal is to teach a taxi agent to be to pick up and drop off passenger to their destination with the least possible number of moves and while avoiding roadblocks(walls).
 The simplified environment is broken into a 5x5 Grid and contains roadblocks(walls). The taxi is the only vehicle in this environment. There are 4 possible locations where passengers can be picked up or dropped off, these are labelled as R(ed), G(reen), Y(ellow), B(lue). The agent's task is to pick up a passenger from one of these locations and drop the passenger at another location
-![open AI tam v3](/images/open-AI taxi-v3)
+![open AI tam v3](./images/open-AI taxi-v3)
 
 
 ### Modified Problem
@@ -46,7 +46,7 @@ We consider the rewards to be deterministic & define the following rewards
 ### State Space 
 The agent encounters a state & takes action based on its current state. The State Space is the set of all possible scenarios our taxi agent could encounter. The state contains useful information which is required by the agent to take optimal action. In this case, we have:
 ![statespace](./images/statespace.png)
-Size of the state space = 9 * 9* 4* 5 = 1620
+<br>Size of the state space = 9 * 9* 4* 5 = 1620
 
 ### Action Space
 - Up
