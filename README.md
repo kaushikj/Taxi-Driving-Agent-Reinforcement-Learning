@@ -3,13 +3,14 @@
 ### Original Problem from Open AI gym Taxi-v3
 The source for the original problem is obtained from Open AI gym. which simulates a simplified taxi environment, the goal is to teach a taxi agent to be to pick up and drop off passenger to their destination with the least possible number of moves and while avoiding roadblocks(walls).
 The simplified environment is broken into a 5x5 Grid and contains roadblocks(walls). The taxi is the only vehicle in this environment. There are 4 possible locations where passengers can be picked up or dropped off, these are labelled as R(ed), G(reen), Y(ellow), B(lue). The agent's task is to pick up a passenger from one of these locations and drop the passenger at another location
-![open AI tam v3](./images/open-AI taxi-v3.png)
-
+<br>
+![open_AI_gym_Taxi_v3](./images/open_AI_taxi_v3.png)
 
 ### Modified Problem
 We modify the Open AI environment and make it bigger with a 9x9 gird & add plenty more walls. Also, we add one more constraint that the taxi can not hit the walls. If it does hit the wall, if it does hit the wall it's game over and the taxi gets a massive penalty.
 The modified environment is shown below
-![modified problem](./images/modified-taxi problem.png)
+<br>
+![modified_problem](./images/modified_taxi_problem.png)
 
 ## Problem Formulation
 
@@ -45,8 +46,10 @@ We consider the rewards to be deterministic & define the following rewards
 
 ### State Space 
 The agent encounters a state & takes action based on its current state. The State Space is the set of all possible scenarios our taxi agent could encounter. The state contains useful information which is required by the agent to take optimal action. In this case, we have:
+<br>
 ![statespace](./images/statespace.png)
-<br>Size of the state space = 9 * 9* 4* 5 = 1620
+<br>
+Size of the state space = 9 * 9* 4* 5 = 1620
 
 ### Action Space
 - Up
@@ -60,6 +63,7 @@ Based on the current state, the taxi may not be able to perform certain actions 
 
 ## Solution
 This problem is solved using Q learning and SARSA
+<br>
 ![algo](./images/algo.png)
 
 ## Result
